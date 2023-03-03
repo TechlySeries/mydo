@@ -50,7 +50,7 @@ self.addEventListener('message', (e) => {
     if (options.lineNumbers) {
       source = source.split('\n');
       source = source.join('</code><code>');
-      source = `<code>${source}</code>`;
+      source = '<code>'+source+'</code>';
     }
   } catch (err) {
     throw new Error(err);
